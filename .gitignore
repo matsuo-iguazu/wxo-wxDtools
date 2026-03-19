@@ -1,2 +1,3 @@
 presto_cert.pem
 __pycache__
+*.Zone.Identifier

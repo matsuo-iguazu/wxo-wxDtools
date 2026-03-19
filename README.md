@@ -51,16 +51,16 @@ wxo-wxDtools/
 
 ### 1-1. スキーマの作成
 
-watsonx.data コンソールを開き、左メニューから **Data Manager** を選択します。
-`iceberg_data` カタログを右クリックして「スキーマの作成」を選び、以下の名前で作成します。
+watsonx.data コンソールを開き、左メニューから **データ・マネージャー** を選択します。
+`iceberg_data` カタログの3点リーダーをクリックして「スキーマの作成」を選び、以下の名前で作成します。
 
 ```
-スキーマ名: it_operations
+it_operations
 ```
 
 ### 1-2. テーブルの作成
 
-SQLエディタを開き、以下のSQLを実行します。
+照会ワークスペースを開き、以下のSQLを実行します。
 
 ```sql
 CREATE TABLE iceberg_data.it_operations.server_metrics (
@@ -79,8 +79,7 @@ WITH (
 
 ### 1-3. サンプルデータの投入
 
-`insert_server_metrics.sql` の内容をSQLエディタに貼り付けて実行します。
-4つのINSERT文を順番に実行してください。
+`insert_server_metrics.sql` の内容（4つのINSERT文で構成されています）を照会ワークスペースに貼り付けて、順番に実行してください。
 
 投入後、以下のSQLで360件になっていることを確認します。
 
